@@ -26,11 +26,11 @@ def image_upload_view(request):
             img_obj = form.instance
             file_name = img_obj.image
             max_length = 34
-            #photo = extract_features('E:/chetan/img_caption/web/media/'+str(file_name))
-            #description = generate_desc(model, tokenizer, photo, max_length)
-            #description = clean_description(description)
+            photo = extract_features('E:/chetan/img_caption/web/media/'+str(file_name))
+            description = generate_desc(model, tokenizer, photo, max_length)
+            description = clean_description(description)
             return render(request, 'index.html', {'form': form, 'img_obj': img_obj,
-        							'description':'description'
+        							'description':description
             	})
     else:
         form = ImageForm()

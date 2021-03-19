@@ -23,3 +23,16 @@ body {
 .padding-left{
 	margin-left:10px;
 }
+
+.copyright {
+	position: absolute;
+	margin: auto;
+  	bottom: 10px;
+  	width: 100%;
+  	text-align: center;
+  	color: white;
+}
+
+li {
+	color: white;
+}

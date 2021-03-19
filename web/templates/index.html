@@ -7,7 +7,7 @@
         <form method="post" enctype="multipart/form-data" class="mt-5">
           {% csrf_token %}
           {{ form.image}}
-          <button type="submit" class="rounded-border">Upload</button>
+          <button type="submit" class="rounded-border value={{execute_ts}}">Upload</button>
         </form>
       </div>
       <center>
