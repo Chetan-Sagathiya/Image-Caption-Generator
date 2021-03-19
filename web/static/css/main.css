@@ -1,16 +1,25 @@
-body, html {
-  height: 100%;
+body { 
+	background-color: #29465b;
+}
+ 
+.navbar-custom {
+	background-color: #D3D3D3;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("/images/bg-1.jpg");
+.rounded-border {
+	border-radius: 10px;
+}
 
-  /* Full height */
-  height: 100%;
+.img-size {
+	height:450px;
+	width: 800px;
+	border: solid black 5px;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.align {
+	margin-left:250px;
+}
+
+.padding-left{
+	margin-left:10px;
 }
