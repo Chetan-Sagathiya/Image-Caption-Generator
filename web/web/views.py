@@ -13,8 +13,8 @@ from keras.models import Model
 from keras.models import load_model
 from PIL import Image
 
-tokenizer = load(open('E:/chetan/img_caption/DL/tokenizer.pkl', 'rb'))
-model = load_model('E:/chetan/img_caption/DL/model_18.h5')
+tokenizer = load(open('E:/chetan/Image-Caption-Generator/tokenizer.pkl', 'rb'))
+model = load_model('E:/chetan/Image-Caption-Generator/model_18.h5')
 
 def image_upload_view(request):
     """Process images uploaded by users"""
@@ -26,7 +26,7 @@ def image_upload_view(request):
             img_obj = form.instance
             file_name = img_obj.image
             max_length = 34
-            photo = extract_features('E:/chetan/img_caption/web/media/'+str(file_name))
+            photo = extract_features('E:/chetan/Image-Caption-Generator/web/media/'+str(file_name))
             description = generate_desc(model, tokenizer, photo, max_length)
             description = clean_description(description)
             return render(request, 'index.html', {'form': form, 'img_obj': img_obj,
