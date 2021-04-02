@@ -1,6 +1,8 @@
 # Image-Caption-Generator
 Generating Descriptions of image using CNN and RNN.
 
+## youtube: https://www.youtube.com/watch?v=eY7RADJiUMM
+
 ## Home Page.
 ![image-1](https://user-images.githubusercontent.com/78957536/113401450-fb0eff00-93c0-11eb-9dec-681b53ce7650.PNG)
 
