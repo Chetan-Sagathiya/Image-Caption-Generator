@@ -25,7 +25,7 @@ def image_upload_view(request):
             # Get the current instance object to display in the template
             img_obj = form.instance
             file_name = img_obj.image
-            max_length = 34
+            max_length = 33
             photo = extract_features('E:/chetan/Image-Caption-Generator/web/media/'+str(file_name))
             description = generate_desc(model, tokenizer, photo, max_length)
             description = clean_description(description)
